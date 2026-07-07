@@ -1,17 +1,17 @@
 create database day;
 use day;
 create table stu(id int primary key,name varchar(100),dept char(5),mark int, city varchar(100));
-insert into stu values(1,"nandu","cse", 95,"chennai");
-insert into stu values(2,"chintu","aero", 90,"chennai");
-insert into stu values(3,"anu","eee", 89,"chennai");
-insert into stu values(4,"dhammu","cec",10,"chennai");
-insert into stu values(5,"ady","ari", 40,"chennai");
-insert into stu values(6,"ram","cse", 30,"chennai");
-insert into stu values(7,"satya","mech",44,"chennai");
-insert into stu values(8,"vishal","ece", 66,"chennai");
-insert into stu values(9,"rocky","cse", 91,"chennai");
+insert into stu values(1,"satya","cse", 95,"chennai");
+insert into stu values(2,"nani","aero", 90,"chennai");
+insert into stu values(3,"avi","eee", 89,"chennai");
+insert into stu values(4,"nandu","cec",10,"chennai");
+insert into stu values(5,"loki","ari", 40,"chennai");
+insert into stu values(6,"bhat","cse", 30,"chennai");
+insert into stu values(7,"bujji","mech",44,"chennai");
+insert into stu values(8,"lucky","ece", 66,"chennai");
+insert into stu values(9,"ajay","cse", 91,"chennai");
 insert into stu values(10,"rizwan","ece", 39,"chennai");
-insert into stu values(11,"sonu","eee", 45,"chennai");
+insert into stu values(11,"eshwar","eee", 45,"chennai");
 select * from stu;
 #2.all + if
 update stu set city = if(dept="cse","chennai","banglore");
@@ -42,7 +42,7 @@ update stu set city = substring(city,1,3);
 #11.concat
 alter table stu add column fname varchar(10);
 alter table stu modify column fname varchar(30);
-update stu set fname = concat(name,"ady");
+update stu set fname = concat(name,"krish");
 #12.replace
 update stu set dept = replace(dept,"eee", "elect");
 #13.date add
