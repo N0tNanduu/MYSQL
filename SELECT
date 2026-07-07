@@ -1,13 +1,13 @@
 create database team;
 use team;
 create table student ( sno int,name varchar (20),mark int,dept varchar(10));
-insert into student values (1,"sudharsan",50,"cse");
-insert into student values (2,"rohit",34,"eee");
-insert into student values (3,"virat",78,"ece");
-insert into student values (4,"aj",90,"cse");
-insert into student values (5,"jd",94,"eee");
-insert into student values (6,"ravi",14,"ece");
-insert into student values (7,"sudharsan",59,"eee");
+insert into student values (1,"nandu",50,"cse");
+insert into student values (2,"dhammu",34,"eee");
+insert into student values (3,"chintu",78,"ece");
+insert into student values (4,"dinesh",90,"cse");
+insert into student values (5,"nikhil",94,"eee");
+insert into student values (6,"rakesh",14,"ece");
+insert into student values (7,"ady",59,"eee");
 select * from student;
 
 select name,mark from student;
